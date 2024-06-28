@@ -1,0 +1,39 @@
+.order-filter-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        align-self: center;
+        margin-right: 10px;
+        font-size: .8rem;
+    }
+}
+
+.order-filter-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: center;
+    button {
+        padding: .5rem;
+        background-color: transparent;
+        border: none;
+        margin-left: 10px;
+    }
+}
+
+.order-filter-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+
+}
+
+
+

@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'productos.scss';
+@import 'maincontainer.scss';
+@import 'detail.scss';
+@import 'footer.scss';
+@import 'carrito.scss';
+@import 'checkout.scss';
+@import 'orderfilter.scss';
+@import 'order.scss';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+body {
+    font-family: "Adamina", serif;
+    //background-image: url("https://static.vecteezy.com/system/resources/previews/007/287/315/non_2x/wooden-background-rustic-brown-planks-texture-old-wood-wall-backdrop-free-photo.jpg");
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+body::before {
+    content: '';
+    opacity: 0.5;
+    z-index: -1;
+    background: url('https://static.vecteezy.com/system/resources/previews/007/287/315/non_2x/wooden-background-rustic-brown-planks-texture-old-wood-wall-backdrop-free-photo.jpg') ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 205.3vh;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+}
+
+
+:root {
+    color-scheme: light dark;
+}

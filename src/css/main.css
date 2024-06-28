@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #440000;
+  padding: 1rem;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+}
+.header h1 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.header-logo {
+  width: 260px;
+  height: 160%;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 0.8rem;
+}
+
+.cart {
+  display: flex;
+}
+
+.nav-link,
+.cart-anchor {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  z-index: 0;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.nav-link::before,
+.cart-anchor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: white;
+  transition: width 0.3s ease, height 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.nav-link:hover::before,
+.cart-anchor:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.nav-link:hover,
+.cart-anchor:hover {
+  color: darkorange;
+  transform: scale(1.1);
+}
+
+.nav-link:hover::after,
+.cart-anchor:hover::after {
+  transform: scaleX(1);
+}
+
+.cart-anchor {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.cart small {
+  color: white;
+  font-weight: 800;
+}
+
+.active {
+  font-weight: 700;
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.nav-button {
+  border: none;
+  background-color: transparent;
+  font-size: large;
+}
+
+.item-list-container {
+  padding: 5rem;
+  background-color: rgb(61, 61, 61);
+  color: whitesmoke;
+  border-radius: 5px;
+  display: grid;
+  min-height: 50vh;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  place-items: center;
+  margin: 2rem;
+  margin-bottom: 5.1rem;
+  z-index: 2;
+}
+.item-list-container h1 {
+  background-color: gray;
+  color: #f5f5f5;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.items-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.items-container h3 {
+  background-color: #440000;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.producto {
+  background-color: rgb(161, 121, 20);
+  border-radius: 1rem;
+  color: whitesmoke;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+  width: 300px;
+}
+.producto h2 {
+  font-weight: 800;
+}
+.producto div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.producto div button {
+  background-color: rgb(61, 61, 61);
+  border: none;
+  cursor: pointer;
+}
+.producto img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  object-position: center;
+  background-color: white;
+}
+
+.item-button {
+  background-color: #440000;
+  font-size: smaller;
+  align-self: center;
+}
+
+.gif-carga {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif");
+  height: 300px;
+  width: 300px;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-carga-item {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif");
+  height: 300px;
+  width: 300px;
+  margin: 5rem;
+  padding: 3rem;
+  background-color: rgb(61, 61, 61);
+  border-radius: 2rem;
+}
+
+.item-detail-loading {
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-section {
+  width: 103vh;
+  background-color: rgb(161, 121, 20);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.3rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  box-shadow: 1px 0.5px 0.5px 0.5px #ffd700;
+  color: whitesmoke;
+}
+.detail-section p {
+  font-size: larger;
+  background-color: #f5f5f5;
+  color: black;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.detail-section h1 {
+  background-color: whitesmoke;
+  color: #440000;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.detail-section strong {
+  background-color: #440000;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.detail-section img {
+  height: 500px;
+  border-radius: 1rem;
+  align-self: center;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: white;
+  padding: 1rem;
+}
+.detail-section button {
+  padding: 0.7rem;
+  max-width: fit-content;
+  background-color: rgb(61, 61, 61);
+  border-radius: 0.7rem;
+  align-self: center;
+  border: none;
+  font-size: large;
+}
+
+.back-button {
+  margin: 1rem;
+  font-size: larger;
+  background-color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+ion-icon {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://c0.klipartz.com/pngpicture/332/619/gratis-png-madera-dura-madera-barniz-barniz-pisos-de-madera-madera.png");
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer-container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #dda33f;
+  border-radius: 1rem;
+}
+.footer-container p {
+  color: #440000;
+}
+
+.carritoDiv {
+  width: 700px;
+  max-height: 600px;
+  height: fit-content;
+  background-color: rgb(67, 67, 67);
+  border-radius: 1rem;
+  z-index: 20;
+  position: absolute;
+  right: 10px;
+  top: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.carritoDiv div {
+  display: flex;
+  align-items: center;
+}
+.carritoDiv div h3 {
+  color: rgb(61, 61, 61);
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.ocultar {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.cart-controls {
+  width: 100%;
+  height: 50px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.cart-controls button {
+  padding: 0.2rem;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.cart-controls .btn-comprar {
+  background-color: #440000;
+}
+.cart-controls .btn-vaciar {
+  color: rgb(61, 61, 61);
+}
+
+.cart-contents {
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  overflow: scroll;
+}
+.cart-contents button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-contents-child {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0.7rem;
+  background-color: whitesmoke;
+  height: 80px;
+}
+.cart-contents-child img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.link-id {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+  background-color: rgb(67, 67, 67);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.quantity-controls button {
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  color: whitesmoke;
+  font-size: large;
+}
+.quantity-controls p {
+  color: whitesmoke;
+  background-color: #440000;
+  border-radius: 0.5rem;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+.checkout-div {
+  background-color: rgb(61, 61, 61);
+  width: 900px;
+  height: 600px;
+  margin: 4.4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 430px;
+  border-radius: 0.7rem;
+}
+.checkout-div h2 {
+  margin-bottom: 30px;
+  background-color: whitesmoke;
+  color: rgb(61, 61, 61);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-div-section {
+  position: relative;
+  top: 100px;
+}
+.checkout-div-section form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.checkout-div-section form input {
+  background-color: whitesmoke;
+  color: black;
+  width: 300px;
+  padding: 0.4rem;
+  margin: 0.7rem;
+}
+.checkout-div-section form button {
+  position: relative;
+  bottom: 0;
+  width: 170px;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.checkout-info {
+  background-color: rgb(61, 61, 61);
+  width: 900px;
+  height: 600px;
+  margin: 4.4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 430px;
+  border-radius: 0.7rem;
+}
+.checkout-info .checkout-info-section {
+  background-color: whitesmoke;
+  color: rgb(61, 61, 61);
+  height: max-content;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.checkout-info .checkout-info-section h2 {
+  margin: 1rem;
+  font-weight: 800;
+}
+
+.order-detail-article {
+  border-radius: 0.7rem;
+  margin: 2rem;
+  padding: 0.7rem;
+  background-color: whitesmoke;
+  color: rgb(61, 61, 61);
+}
+.order-detail-article h3 {
+  margin-bottom: 10px;
+}
+
+.main-detail {
+  height: 250px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.order-detail {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #440000;
+  margin: 0.5rem;
+  border-radius: 0.7rem;
+  color: whitesmoke;
+}
+.order-detail img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.order-filter-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.order-filter-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.order-filter-form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+}
+.order-filter-form button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.order-filter-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.order-details {
+  width: 900px;
+  height: 600px;
+  background-color: rgb(61, 61, 61);
+  margin: 4.4rem;
+  padding: 4rem;
+  border-radius: 0.7rem;
+  position: relative;
+  left: 440px;
+}
+
+.order-details-section {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: rgb(61, 61, 61);
+  border-radius: 0.7rem;
+}
+
+.order-item {
+  padding: 0.5rem;
+}
+
+.order-ul {
+  padding: 0.5rem;
+}
+
+.order-li {
+  padding: 0.5rem;
+  list-style: none;
+  background-color: #440000;
+  color: whitesmoke;
+  margin: 0.4rem;
+  border-radius: 0.7rem;
+}
+
+.order-last {
+  padding: 0.2rem;
+}
+
+.order-detail-ul {
+  border-top: 1px solid rgb(61, 61, 61);
+  padding: 0.5rem;
+  overflow: scroll;
+  max-height: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Adamina", serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  opacity: 0.5;
+  z-index: -1;
+  background: url("https://static.vecteezy.com/system/resources/previews/007/287/315/non_2x/wooden-background-rustic-brown-planks-texture-old-wood-wall-backdrop-free-photo.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 205.3vh;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+/*# sourceMappingURL=main.css.map */

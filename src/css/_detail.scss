@@ -1,0 +1,97 @@
+.detail {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gif-carga-item {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif");
+    height: 300px;
+    width: 300px;
+    margin: 5rem;
+    padding: 3rem;
+    background-color: rgb(61, 61, 61);
+    border-radius: 2rem;
+}
+
+.item-detail-loading {
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-section {
+    width: 103vh;
+    background-color: rgb(161, 121, 20);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 1px 0.5px 0.5px 0.5px  $Dorado;
+    color: whitesmoke;
+
+    p {
+        font-size: larger;
+        background-color: $Blanco-Apagado;
+        color: black;
+        width: fit-content;
+        padding: .5rem;
+        border-radius: 1rem;
+
+    }
+
+    h1 {
+        background-color: whitesmoke;
+        color: $main-theme;
+        width: fit-content;
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+
+    strong {
+        background-color: $main-theme;
+        width: fit-content;
+        border-radius: 1rem;
+        padding: .5rem;
+    }
+    
+    img {
+        height: 500px;
+        border-radius: 1rem;
+        align-self: center;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        background-color: white;
+        padding: 1rem;
+    }
+    button {
+        padding: .7rem;
+        max-width: fit-content;
+        background-color: rgb(61, 61, 61);
+        border-radius: .7rem;
+        align-self: center;
+        border: none;
+        font-size: large;
+    }
+}
+
+.back-button {
+    margin: 1rem;
+    font-size: larger;
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    border-radius:1rem ;
+    padding: .2rem;
+}
+
+
+
+ion-icon {
+    color: black;
+}

@@ -1,0 +1,22 @@
+.footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://c0.klipartz.com/pngpicture/332/619/gratis-png-madera-dura-madera-barniz-barniz-pisos-de-madera-madera.png");
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+.footer-container {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #dda33f;
+    border-radius: 1rem;
+
+    p {
+        color: $main-theme;
+    }
+}
