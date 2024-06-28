@@ -88,7 +88,7 @@ const Checkout = () => {
         return (
             <div className='checkout-info'>
                 <section className='checkout-info-section'>
-                    <h2>Muchas gracias, {clientId} por tu compra!</h2>
+                    <h2>Muchas gracias por tu compra, {clientId}!</h2>
                     <h3>Tu código de seguimiento e identificación es: {orderId}</h3>
                 </section>
                 <article className='order-detail-article'>
