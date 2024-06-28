@@ -8,7 +8,7 @@ import OrderFilter from './OrderFilter';
 export const Header = () => {
     return (
         <header className='header'>
-            <Link to="/" ><img className="header-logo" src="../../src/assets/spirit-full-3.png" alt="" /></Link>
+            <Link to="/" ><img className="header-logo" src="https://i.ibb.co/zfJvBXF/spirit-full-3.png" alt="logo3" /></Link>
             <NavBar />
             <OrderFilter/>
             <Carrito/>
